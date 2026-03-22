@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets"
+
+const { href, title, description, heroImage } = Astro.props
+---
+
+<article class="post-card">
+	<div class="hero-image">
+		{heroImage && <a href={href}><Image src={heroImage} width={200} alt="Ilustração da postagem" /></a>}
+	</div>
+	<div class="text">
+		<h4 class="title">
+			<a href={href}>{title}</a>
+		</h4>
+		<p>{description}</p>
+	</div>
+</article>
+
+<style>
+	.post-card {
+		background: #ffe590;
+		width: 300px;
+		border-radius: 5px;
+	}
+	.hero-image {
+		width: fit-content;
+		margin: 0 auto;
+	}
+	.hero-image a {
+		display: block;
+	}
+	.text {
+		padding: 0 10px;
+	}
+    .title {
+		font-size: 1.2rem;
+		margin: 0;
+	}
+	.post-card p {
+		font-size: 0.9rem;
+		padding: 4px 0;
+		text-align: left;
+	}
+
+	.title:hover {
+		text-decoration: underline;
+	}
+</style>
