@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseHead from '../components/BaseHead.astro'
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts'
+import { SITE_DESCRIPTION, SITE_TITLE, BASE_URL } from '../consts'
 
 import Header from '../components/Header.astro'
 import PostCard from '../components/PostCard.astro'
@@ -28,7 +28,7 @@ const posts = postCollection.sort((a, b) => (
 			<section class="post-card-list">
 				{posts.map((post) => (
 					<PostCard 
-						href={`/blog/${post.id}`}
+						href={`${BASE_URL}/blog/${post.id}`}
 						title={post.data.title}
 						description={post.data.description}
 						heroImage={post.data.heroImage}
