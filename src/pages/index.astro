@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro'
 import { SITE_DESCRIPTION, SITE_TITLE, BASE_URL } from '../consts'
 
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 import PostCard from '../components/PostCard.astro'
 
 const postCollection = await getCollection('blog')
@@ -23,8 +24,6 @@ const posts = postCollection.sort((a, b) => (
 		<main>
 			<p>Olá, pessoa! Espero que esteja bem.</p>
 
-			<h2>Artigos</h2>
-
 			<section class="post-card-list">
 				{posts.map((post) => (
 					<PostCard 
@@ -36,6 +35,8 @@ const posts = postCollection.sort((a, b) => (
 				))}
 			</section>
 		</main>
+
+		<Footer />
 	</body>
 </html>
 

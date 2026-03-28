@@ -1,9 +1,13 @@
 ---
+import Image from "astro/components/Image.astro";
+import coracao from "../assets/coracao-desenhado.png"
+
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Your name here. All rights reserved.
+	<span>Feito com <Image width={20} src={coracao} alt="Coração" /> por Igor Rocha</span>
+	<!-- &copy; {today.getFullYear()} Your name here. All rights reserved.
 	<div class="social-links">
 		<a href="https://m.webtoo.ls/@astro" target="_blank">
 			<span class="sr-only">Follow Astro on Mastodon</span>
@@ -37,10 +41,18 @@ const today = new Date();
 				></path></svg
 			>
 		</a>
-	</div>
+	</div> -->
 </footer>
 <style>
 	footer {
+		background: white;
+		padding: 1rem;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	/* footer {
 		padding: 2em 1em 6em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
@@ -58,5 +70,5 @@ const today = new Date();
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
-	}
+	} */
 </style>

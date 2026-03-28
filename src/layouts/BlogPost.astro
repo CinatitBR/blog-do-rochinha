@@ -17,23 +17,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<style>
 			main {
 				margin: 0 auto;
-				max-width: 720px;
-				width: calc(100% - 2em);
+				width: 75ch;
 			}
-			h1 {
-				margin: 0;
-			}
+			/* :global selector makes the styling be applied to the child (<slot />) */
 			.prose :global(p) {
 				text-align: justify;
 			}
 			.hero-image {
 				width: 100%;
-				padding: 0.5rem 0;
 			}
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
+				margin: 1rem auto;
+				max-width: 100%;
+				height: auto;
 			}
+
 			/* .hero-image {
 				width: 100%;
 			}
@@ -111,5 +110,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			</article>
 		</main>
 		<Footer /> -->
+		</main>
+		<Footer />
 	</body>
 </html>
