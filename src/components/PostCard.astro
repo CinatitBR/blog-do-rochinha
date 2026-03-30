@@ -6,13 +6,13 @@ const { href, title, description, heroImage } = Astro.props
 
 <article class="post-card">
 	<div class="hero-image">
-		{heroImage && <a href={href}><Image src={heroImage} width={200} alt="Ilustração da postagem" /></a>}
+		{heroImage && <a href={href}><Image src={heroImage} width={200} height={200} alt="Ilustração da postagem" /></a>}
 	</div>
 	<div class="text">
 		<h4 class="title">
 			<a href={href}>{title}</a>
 		</h4>
-		<p>{description}</p>
+		<p class="description">{description}</p>
 	</div>
 </article>
 
@@ -21,6 +21,7 @@ const { href, title, description, heroImage } = Astro.props
 		background: #ffe590;
 		width: 300px;
 		border-radius: 5px;
+		padding: 8px;
 	}
 	.hero-image {
 		width: fit-content;
@@ -28,9 +29,6 @@ const { href, title, description, heroImage } = Astro.props
 	}
 	.hero-image a {
 		display: block;
-	}
-	.text {
-		padding: 0 10px;
 	}
     .title {
 		font-size: 1.2rem;
@@ -40,6 +38,7 @@ const { href, title, description, heroImage } = Astro.props
 		font-size: 0.9rem;
 		padding: 4px 0;
 		text-align: left;
+		margin-bottom: 0;
 	}
 
 	.title:hover {

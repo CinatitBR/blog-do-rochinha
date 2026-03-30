@@ -57,9 +57,10 @@ const posts = postCollection.sort((a, b) => (
 	}
 
 	.post-card-list {
-		max-width: 500px;
+		width: min(100%, 1000px);
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		gap: 1rem;
 	}
 </style>
