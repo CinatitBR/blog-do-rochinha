@@ -2,7 +2,7 @@
 title: "Minha primeira postagem"
 description: "O início e boas vindas."
 pubDate: "Mar 22 2026"
-heroImage: "../../assets/desenho-boas-vindas.png"
+cover: "../../assets/desenho-boas-vindas.png"
 ---
 
 Olá, amigos! Essa é a primeira postagem do meu blog, o <mark>Blog do Rochinha</mark>, o qual eu já queria criar há alguns anos e finalmente o fiz, graças

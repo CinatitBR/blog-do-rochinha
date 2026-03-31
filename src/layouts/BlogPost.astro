@@ -8,16 +8,27 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="pt-BR">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={cover} />
 		<style>
 			main {
 				margin: 0 auto;
 				width: 75ch;
+			}
+
+			main header {
+				margin: 2rem 0;
+				text-align: center;
+			}
+			main header h1 {
+				margin: 0;
+			}
+			.date {
+				font-size: 1rem;
 			}
 			/* :global selector makes the styling be applied to the child (<slot />) */
 			.prose :global(p) {
@@ -30,10 +41,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.prose :global(img) {
 				max-width: 400px;
 			}
-			.hero-image {
+			.cover {
 				width: 100%;
 			}
-			.hero-image img {
+			.cover img {
 				display: block;
 				margin: 1rem auto;
 				max-width: 100%;
@@ -44,11 +55,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<body>
 		<Header />
-		<main>
-			<h1>{title}</h1>
 
-			<div class="hero-image">
-				{heroImage && <Image width={500} height={500} src={heroImage} quality="max" alt="Ilustração da postagem" />}
+		<main>
+			<header>
+				<h1>{title}</h1>
+				<span class="date"><FormattedDate date={pubDate} /> | atualizado <FormattedDate date={updatedDate} /></span>
+			</header>
+
+			<div class="cover">
+				{cover && <Image width={500} height={500} src={cover} quality="max" alt="Ilustração da postagem" />}
 			</div>
 
 			<div class="prose">
@@ -61,6 +76,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				if (footnoteEle != null) footnoteEle.textContent = "Rodapé";
 			</script>
 		</main>
+
 		<Footer />
 	</body>
 </html>

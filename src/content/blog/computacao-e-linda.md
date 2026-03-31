@@ -2,7 +2,7 @@
 title: "A Computação é Linda"
 description: "Vou tentar te apaixonar pela computação criativa >:)"
 pubDate: "Mar 28 2026"
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/0/06/CIELAB_color_space_top_view.png"
+cover: "https://upload.wikimedia.org/wikipedia/commons/0/06/CIELAB_color_space_top_view.png"
 ---
 
 <!-- (Falar sobre: projeção 3d em um plano 2d, alguns tipos diferentes de projeção; relação disso com a Álgebra Linear e o Hermann Grassmann.) -->
