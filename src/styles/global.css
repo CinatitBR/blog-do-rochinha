@@ -34,6 +34,10 @@
 }
 /* === === */
 
+div {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
   font-family: "BricolageGrotesque", sans-serif;
@@ -49,7 +53,7 @@ body {
 }
 main {
   width: 720px;
-  max-width: calc(100% - 2em);
+  max-width: calc(100% - 2rem);
   margin: auto;
   margin-bottom: 0.5rem;
   padding: 0 1em;

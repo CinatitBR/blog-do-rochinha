@@ -5,9 +5,9 @@ const { href, title, description, cover } = Astro.props
 ---
 
 <article class="post-card">
-	<div class="cover">
-		{cover && <a href={href}><Image src={cover} width={200} height={200} alt="Ilustração da postagem" /></a>}
-	</div>
+	<a href={href} class="cover">
+		{cover && <Image src={cover} width={200} height={200} alt="Ilustração da postagem" />}
+	</a>
 	<div class="text">
 		<h4 class="title">
 			<a href={href}>{title}</a>
@@ -24,11 +24,16 @@ const { href, title, description, cover } = Astro.props
 		padding: 8px;
 	}
 	.cover {
-		width: fit-content;
-		margin: 0 auto;
+		display: grid;
+		place-items: center;
+		width: 100%;
+		height: 200px;
+
 	}
-	.cover a {
+	.post-card img {
 		display: block;
+		margin: 0 auto;
+		height: auto;
 	}
     .title {
 		font-size: 1.2rem;

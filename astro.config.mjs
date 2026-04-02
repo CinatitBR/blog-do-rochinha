@@ -11,4 +11,7 @@ export default defineConfig({
   site: "https://cinatitbr.github.io",
   base: BASE_URL,
   integrations: [mdx(), sitemap()],
+  image: {
+    objectFit: "contain",
+  },
 });
