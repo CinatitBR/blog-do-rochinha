@@ -39,6 +39,8 @@ const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.prop
 			}
 			.prose :global(img) {
 				max-width: min(100%, 400px);
+				height: auto;
+				border: 4px solid black;
 			}
 			.cover {
 				display: grid;
@@ -51,6 +53,10 @@ const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.prop
 				display: block;
 				max-width: 100%;
 				height: auto;
+			}
+
+			:global(.footnotes) {
+				clear: both;
 			}
 		</style>
 	</head>
