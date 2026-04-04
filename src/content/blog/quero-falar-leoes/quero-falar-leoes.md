@@ -1,10 +1,6 @@
 ---
 title: "Quero falar sobre leões"
-<<<<<<< HEAD
-description: "Leões são muito legais!"
-=======
 description: "Leões são muito legais! Aqui falo sobre as aparições de leões durante a história, e onde habitaram antes de serem extintos."
->>>>>>> 413b5f0 (Create new post)
 # YYYY-MM-DD (ano-mês-dia)
 pubDate: "2026-04-03"
 updatedDate: "2026-04-03"
