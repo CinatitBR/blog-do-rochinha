@@ -18,10 +18,11 @@ const { href, title, description, cover } = Astro.props
 
 <style>
 	.post-card {
-		background: #ffe590;
 		width: 300px;
-		border-radius: 5px;
 		padding: 8px;
+		background: #5254ca;
+		border: 5px solid white;
+		transition: border-color 250ms;
 	}
 	.cover {
 		display: grid;
@@ -39,6 +40,9 @@ const { href, title, description, cover } = Astro.props
 		font-size: 1.2rem;
 		margin: 0;
 	}
+	.title a {
+		display: block;
+	}
 	.post-card p {
 		font-size: 0.9rem;
 		padding: 4px 0;
@@ -48,5 +52,11 @@ const { href, title, description, cover } = Astro.props
 
 	.title:hover {
 		text-decoration: underline;
+	}
+
+	/*  === HOVER === */
+	.post-card:hover {
+		border-color: #ffff48;
+		rotate: 1deg;
 	}
 </style>
