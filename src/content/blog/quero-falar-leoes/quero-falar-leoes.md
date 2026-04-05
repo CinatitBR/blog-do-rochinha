@@ -21,12 +21,15 @@ Mais interessante ainda é saber que antes existiam leões onde hoje não existe
 
 ### Norte da África
 
+Essa é a distribuição do leão-berbere:
+
 [^1]![Distribuição do leão-berbere](./barbary-lion-distribution.webp)
-Essa é a distribuição do leão-berbere: ele habitava boa parte do norte da África, e foi nativo da região até meados do século XX.
+
+ele habitava boa parte do norte da África, e foi nativo da região até meados do século XX.
 
 O bicho era tão lindo e exuberante que chegou a influenciar o Antigo Egito, a principal civização da região durante a Antiguidade, ao ser referenciado na figura de divindades.
 
-<img alt="Prudhoe Lions, a estátua de um Leão feita no Antigo Egito" style="float: right;" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Egyptian_Red_Granite_Lion_of_Amenhotep_III%2C_Temple_of_Soleb_in_Nubia%2C_18th_Dynasty%2C_c._1380_BC_%2836140124350%29.jpg" />
+<img alt="Prudhoe Lions, a estátua de um Leão feita no Antigo Egito" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Egyptian_Red_Granite_Lion_of_Amenhotep_III%2C_Temple_of_Soleb_in_Nubia%2C_18th_Dynasty%2C_c._1380_BC_%2836140124350%29.jpg" />
 
 <br style="clear: both;">
 
@@ -50,10 +53,10 @@ Supostamente, os camelos da tropa do Xerxes I foram atacados por leões na Maced
 
 [^2]: [History of lions in Europe](https://en.wikipedia.org/wiki/History_of_lions_in_Europe)
 
-<style>
+<!-- <style>
     /* Alinha imagens à esquerda */
     img {
         float: left;
         margin: 0 1rem 1rem 0;
     }
-</style>
+</style> -->
