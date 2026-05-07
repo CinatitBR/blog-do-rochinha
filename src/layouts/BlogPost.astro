@@ -59,6 +59,27 @@ const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.prop
 			:global(.footnotes) {
 				clear: both;
 			}
+			
+			/* === Styling classes === */
+			/* align-left: class that aligns image to the left. */
+			:global(.align-left p) {
+				margin: 0;
+			}
+
+			:global(.align-left img) {
+				float: left;
+				margin: 0 1rem 1rem 0;
+			}
+
+			:global(.align-right p) {
+				margin: 0;
+			}
+
+			:global(.align-right img) {
+				float: right;
+				margin: 0 0 1rem 1rem;
+			}
+			/* === */
 		</style>
 	</head>
 
