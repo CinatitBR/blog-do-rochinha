@@ -52,7 +52,9 @@ const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.prop
 			.cover img {
 				display: block;
 				max-width: 100%;
+				max-height: 500px;
 				border-radius: 5px;
+				height: auto;
 			}
 
 			:global(.footnotes) {
@@ -92,7 +94,7 @@ const { title, description, pubDate, updatedDate = pubDate, cover } = Astro.prop
 			</header>
 
 			<div class="cover">
-				{cover && <Image src={cover} height={500} quality="max" inferSize={true} alt="Ilustração da postagem" />}
+				{cover && <Image src={cover} quality="max" alt="Ilustração da postagem" />}
 			</div>
 
 			<div class="prose">
